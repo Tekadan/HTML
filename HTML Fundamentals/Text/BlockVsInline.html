@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            
+    </head>
+        
+    <body>
+        <!-- Below is a set of sample block elements -->
+        <!-- The first div contains a span, or an inline element. -->
+        <div id="overviewContainer">This is my <span> overview </span>.</div>
+        <!-- Below displays the blocking nature of having nested blocked elements -->
+        <div id="secondDiv"> This is my <div> second </div> div.</div>
+        <!-- These display on different lines because they are two block elements -->
+    
+        <!-- The <p> tag is another block level element -->
+        <p>This is another sample block element, but it is a 'p' tag instead </p>
+        <!-- The <p> tag contains a <div> within it, but it should not contain the div within the <p> element. This will render, but will not pass a validation.
+        <p>This is another sample block element, but it is a 'p' tag instead, <div>but this also contains a div!</div> </p>
+    </body>
+</html>
+
+<!--
+    Block Vs Inline:
+    Block Elements - Container elements for grouping, may contain other block elements and line elements.
+        These are wrapped together as a big single element.
+    Inline Elements - Container for texts and other inline text. This allows us to treat individual text segments as special styling or links to other pages.
+        We CANNOT have a span tag (inline element) that contains a div (block) element.
+-->

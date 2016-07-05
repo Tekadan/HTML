@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            
+    </head>
+        
+    <body>
+        <!-- Linking to within this document -->
+        <a href="#someSpecialStuff">
+            Show me some Special Stuff!
+        </a>
+        <br/>
+        <a href="#someMoreSpecialStuff">
+            Show me some More Special Stuff!
+        </a>
+        
+        <!-- Relative paths -->
+        <!-- The '.' means to look in the current directory. -->
+        <!-- The '..' means to look in the parent directory to our current directory. -->
+        <a href="..\Lists\Lists.html">Lists</a>
+        <!-- This will link to the headings page and inside of that document to the #deepLink anchor tag. -->
+        <a href="..\Text\Headings.html#deepLink">Headings</a>
+        
+        <!-- Absoultey Paths -->
+        <a href="http://www.google.com">Google</a>
+        <a href="http://www.bing.com">Bing</a>
+        
+        
+        <h3> <a name ="someSpecialStuff" title="Some Special Stuff">Some Special Section</a> </h3>
+        <div>
+            <ol>
+                <li>One</li>
+                <li>Two</li>
+                <li>Three</li>
+            </ol>
+        </div>
+        
+        <h3> <a name ="someMoreSpecialStuff" title="Some More Special Stuff">Some Other Special Section</a> </h3>
+        <div>
+            <ol start="4">
+                <li>Four</li>
+                <li>Five</li>
+                <li>Six</li>
+            </ol>
+        </div>
+    </body>
+</html>
+
+<!--
+    HTML Links and Anchors - Connecting Documents Together
+    
+    HTML Anchors:
+        - Anchors act as either a source or target for linking
+        - Anchors with the name attribute are targets 
+        - Anchors with the href attribute are sources
+    
+    Linking to Documents
+    - These links can be either absolute or relative (entire URI provided or URI relative to current document)
+    - Link represntation is the content of the anchor tag, this is either some text, images, or etc.
+    - Base element set in the head impacts ALL relative links - does not apply to absoulte URIs
+    
+    
+    Linking within Documents
+    - Simlpy add an <a> tag with the name attribute, and then have another <a> tag reference this new named element within their href. 
+        
+    Additional Attributes for Links:
+    - Language: The native language of the page
+    - Relationship:
+    - Content Type: 
+    - AccessKey:
+    
+-->

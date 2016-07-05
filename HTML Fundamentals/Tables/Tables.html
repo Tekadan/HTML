@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            
+    </head>
+        
+    <body>
+        <table summary="This is used by screen-readers to help a user figure out what is in this table">
+            <!-- By Default the Caption is rendered on top of the table --> 
+            <caption>My Very Special Table</caption>
+            <!-- Header Table Elementers -->
+            <thead>
+                <th>List Type</th>
+                <th>Tags</th>
+            </thead>
+            <!-- tfoot MUST come before the body of the table - this can mess with rendering. --> 
+            <tfoot>
+                <tr><td rowspan="2">This is the footer, even though it's in the middle of the table!</td></tr>
+            </tfoot>
+            </tfoot>
+            <!-- Body Table Elements -->
+            <tbody>
+                <tr>
+                    <td>Unordered List</td>
+                    <td>&lt;ul&gt;, &lt;li&gt;</td>
+                </tr>
+                <tr>
+                    <td>Ordered List List</td>
+                    <td>&lt;ol&gt;, &lt;li&gt;</td>
+                </tr>
+                <tr>
+                    <td>Definition List</td>
+                    <td>&lt;dl&gt;, &lt;dt&gt;, &lt;dd&gt;</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
+
+<!--
+    Tables!
+    
+    Table Structure:
+        - Caption: Displays a text field that captions the table
+        - Header: Single row that displays headers (if any) (but can be more than one)
+        - Body: Actual data content of the table
+        - Footer: Single row (but can be more than one) for totals, summaries, etc - shouldn't be used as caption
+    
+    Working with data in tables:
+        - <tr> adds a row to the table, required inside of the header, body, and footer.
+        - <th> defines the cell within a <tr> to define the data for the <thead>
+        - <td> defines a cell of data within a <tr> inside of the <tbody>
+    
+    Table Formatting: (Not Formatting WITH Tables)
+        - colspan / rowspan allows attributes to be used on table cells that span accross columns or rows.
+            - Rowspan is what should be used when you want a single large cell. It's value is how many rows it should span.
+        - Cell Padding: the immediate space around the cell itself
+        - Cell Spacing: The amount of space between cells (where a cell is considered the td + cell padding)
+        - Width: Can be % or px, sets the width of the table as a whole.
+    
+-->

@@ -1,0 +1,63 @@
+<!-- There are many new input types to HTML5 -->
+<!-- If one of these types is unknown to the browser it will fall back onto a standard textbox picker -->
+
+<!-- Displays a colorpicker for user, differs depending on the browser -->
+<input type="color"/>
+
+<!-- Creates a dropdown that goes hand and hand with a standard 'input' tag -->
+<input type="datalist"/>
+
+<!-- Allows the user to select a date from a calendar picker -->
+<input type="date"/>
+
+<!-- Combo of date and time inputs -->
+<input type="datetime"/>
+
+<input type="datetime-local"/>
+
+<!-- Textbox that expects a valid email address -->
+<input type="email"/>
+
+<!-- Picks a month and a year  -->
+<input type="month"/>
+
+<!-- Allows user to input their number between a min and a max using keyboard up and down values -->
+<input type="number"/>
+
+<!-- A slider with a min and max value -->
+<input type="range"/>
+
+<!-- Has an 'x' to clear the textbox easily -->
+<input type="search"/>
+
+<!-- Textbox that expects a valid phone number ###-###-#### -->
+<input type="tel"/>
+
+<input type="time"/>
+
+<!-- textbox that expects a valid url -->
+<input type="url"/>
+
+<!-- Picks a single week from a calendar drop down. -->
+<input type="week"/>
+
+<!-- These values work with 'soft-keyboards' which means that the keyboard displayed to the user will be dynamic based on what the input type is. This is super helpful for web developers and mobile. -->
+<!-- You should check these out on how they render on different inputs -->
+
+<!-- This search box will have the auto-focus on load. This only one element can have this value per page -->
+<input type="search" autofocus/>
+
+<!-- This textbox has a required attribute and a placeholder text that helps the user during validtation -->
+<input type="text" placeholder="First and Last" required />
+<!-- The placeholder value disappears when the user begins to input the value -->
+
+<!-- If I were to put 'asugaho' into this text box, it would be given special red CSS to let the user know that the value is incorrect in the textbox as part of the valication -->
+<input type="email" required/>
+
+<!-- The range attribute does not have any special way to display the value as of yet - so we will need to use JS to display that value back to the user -->
+<input type="range"/> <label id="rangeReporter"> </label> 
+<!-- Go ahead and attach a change event to this value -->
+
+<!-- This value is used to allow a user to take adavantage of an autocomplete dropdow that allows free text input just like a textbox too -->
+<input type="datalist"/>
+

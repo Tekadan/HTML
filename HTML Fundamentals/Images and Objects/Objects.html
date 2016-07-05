@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            
+    </head>
+        
+    <body>
+        <object data="data:application/x-silverlight-2," type="application/x-silverlight-2" width="50%"" height="50%">
+            <!-- Parameters for our Silverlight player -->
+            <param name="source" value="./apps/SilverlightObjectDemo.xap"/> 
+            <param name="initParams" value="textMessage=Do not use maruees in your HTML"/>
+            <!-- How to deal with failed object load -->
+            <span> You do not have Silverlight installed in this browser </span>
+            <!-- A good idea would be a link to go and download silverlight! -->
+        </object>
+    </body>
+</html>
+
+<!--
+   Objects: a container where we can pass in things like silverlight players or video/audio.
+   Notice that we must include a params inner tag to describe the object we are looking to
+-->
